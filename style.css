@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins"
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* header */
+.header {}
+
+/* logo */
+.logo img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav img {
+    width: 25px;
+}
+
+/* nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* hera section */
+.hero {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* left side */
+.left-side h1 {
+    margin-bottom: 30px;
+}
+
+.hero .left-side p {
+    width: 300px;
+}
+
+.hero .right-side img {
+    width: 100%;
+}
+/* button */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff523b;
+    padding: 8px 30px;
+    border-radius: 30px;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: #563434;
+}
+
+/* categories */
+.categories {
+    background-color: #ff523b;
+    display: flex;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* box */
+.box {
+    margin: 50px 0;
+    width: 250px;
+}
+
+.box {
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box2 img {
+    height: 100%;
+}
+
+/* featured Products */
+.products {
+    color: white;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.products h1 {
+    padding-top: 20px;
+}
+
+/* grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0px 40px 0;
+}
+
+/* items */
+.item {
+    transition: 0.7s;
+    /* border: 1px solid black; */
+}
+
+.item h4 {
+    color: black;
+}
+
+.item p {
+    color: black;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.item img {
+    border-radius: 10px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.item i {
+    color: orange;
+}
+
+/* Watch */
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+/* left-box */
+.left-box img {
+    width: 100%;
+}
+
+/* right box */
+.right-box span {
+    color: rgb(103, 101, 101);
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.right-box h1 {
+    color: black;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.right-box p {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 20px;
+    font-weight: 500;
+    color: rgb(81, 78, 78);
+}
+
+/* testimonial */
+.testimonial {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    transition: 0.5s;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+}
+
+.card1 p {
+    padding-top: 20px;
+}
+
+.card1 h3 {
+    padding-top: 10px;
+}
+
+.card1 img {
+    margin-top: 20px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+
+@media (max-width:600px) {
+    .timer {
+        flex-direction: column;
+    }
+    .timer .right-box {
+        text-align: center;
+    }
+}
+
+@media (max-width:800px) {
+    nav {
+       display: none; 
+    }
+}
