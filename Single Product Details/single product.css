@@ -1,0 +1,85 @@
+@import url(../globle.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* single details */
+.single-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* Left Side */
+.left-side {
+    width: 100%;
+    max-width: 400px;
+}
+
+.left-side img {
+    height: 100%;
+    width: 100%;
+}
+
+/* small imgs */
+.small-imgs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    height: 105px;
+    width: 100%;
+    max-width: 400px;
+}
+.small-imgs img {
+    object-fit: cover;
+}
+/* Right Side */
+.right-side {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px;
+}
+
+.right-side h1 {
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+.right-side h4 {
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+.right-side select {
+    margin-top: 20px;
+    width: 100px;
+    display: flex;
+    outline: none;
+}
+
+.right-side input {
+    width: 50px;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+
+}
+
+.right-side h3 {
+    font-weight: 700;
+}
+
+.right-side p {
+    max-width: 400px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.right-side i {
+    color: orangered;
+}
